@@ -56,6 +56,12 @@ function scene3() {
 
   // Setup Props
 
+  stage.append(egg)
+  egg.style.position = 'absolute'
+  egg.style.left = '28%'
+  egg.style.top = '50%'
+  egg.style.width = '40px'
+
   // Prop 1
 
   // Prop 2
@@ -65,13 +71,41 @@ function scene3() {
   // Stage direction 1
 
   frame(function() {
-
+    egg.style.left = '28%'
   })
+
+  frame(function() {
+    egg.style.left = '30%'
+  })
+
+  frame(function() {
+    egg.style.left = '40%'
+  })
+
+  frame(function() {
+    egg.style.left = '50%'
+  })
+
+  frame(function() {
+    egg.style.left = '60%'
+  })
+
+  frame(function() {
+    egg.style.left = '65%'
+  })
+
+      for (eggLeft = 65; eggLeft > 28; eggLeft-= 5) {
+        frame(drogoThrowsEgg)
+    }
+    //
+    function drogoThrowsEgg() {
+      egg.style.left = (parseInt(egg.style.left) - 5) + '%'
+    }
+
+    // Stage direction 2
+
 
   // Stage direction 2
 
-  frame(function() {
-
-  })
 
 }
