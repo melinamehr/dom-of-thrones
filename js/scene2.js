@@ -6,16 +6,22 @@ function scene2() {
  // Setup Stage
   stage = document.querySelector('#stage')
   castleImgSrc = castle.getAttribute('src')
+  stageImg = stage.querySelector('#stage-img')
   stageImg.setAttribute('src', castleImgSrc)
 
   // Setup Cast
   nedContainer = document.createElement('div')
   stage.append(nedContainer)
   nedContainer.style.position = 'absolute'
-  nedContainer.style.width = '10%'
-  nedContainer.style.height = '20%'
-  nedContainer.style.top = '50%'
-  nedContainer.style.left = '50%'
+  nedContainer.style.width = '70%'
+  nedContainer.style.height = '44%'
+  nedContainer.style.left = '25%'
+  nedContainer.style.top = '55%'
+  ned.style.width = '70%'
+  ned.style.position = 'absolute'
+  ned.style.top = 0
+  leather.style.position = 'absolute'
+  leather.style.bottom = 0
   ned = document.querySelector('#ned')
   nedContainer.append(ned)
   leather = document.querySelector('#leather-armour')
